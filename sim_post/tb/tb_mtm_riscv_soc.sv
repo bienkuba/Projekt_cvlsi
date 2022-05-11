@@ -42,11 +42,13 @@ mtm_riscv_soc_top `TOP_MODULE (.*);
 
 task reset();
 //    @(posedge clk) $display("%0t reset: posedge clk detected",$time);
+    $assertoff;
     rst_n        = 1;
     #1step rst_n = 0;
     $display("%0t reset: reset activated",$time);
     repeat(2)
         @(negedge clk); // $display("%0t reset: negedge clk detected",$time);
+    $asserton;
     rst_n        = 1;
     $display("%0t reset: reset disactivated",$time);
 endtask
