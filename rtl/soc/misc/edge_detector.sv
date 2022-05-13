@@ -14,6 +14,8 @@
  * You should have received a copy of the GNU General Public License
  * along with this program.  If not, see <https://www.gnu.org/licenses/>.
  */
+`ifndef MTM_PROTECT_EDGE_DETECTOR
+`define MTM_PROTECT_EDGE_DETECTOR
 
 module edge_detector (
     output logic edge_detected,
@@ -54,3 +56,5 @@ always_comb begin
 end
 
 endmodule
+
+`endif

@@ -93,7 +93,7 @@ uart/uart_receiver.sv
 uart/uart_transmitter.sv
 uart/uart.sv
 
-# misc/edge_detector.sv
+misc/edge_detector.sv
 misc/serial_clock_generator.sv
 
 mtm_riscv_soc.sv
